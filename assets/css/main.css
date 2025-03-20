@@ -5600,16 +5600,16 @@ h1, p {
 
 
 .mission_container {
-    width: 85%;
+    width: 90%;
     margin: 40px auto;
 }
 
 /* Heading Styles */
 .missionh1 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -5617,14 +5617,15 @@ h1, p {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 200px 0 0 0;
+    padding: 100px 0 0 0;
 }
 
+/* Mission Box */
 .mission_box {
     width: 30%;
     padding: 30px;
     border-radius: 10px;
-    color: white;
+    color: rgba(16, 16, 16, 0.8);
     text-align: center;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -5632,52 +5633,67 @@ h1, p {
 
 /* Image Styling */
 .mission_box img {
-    width: 200px;
-    height: 210px;
+    width: 150px;
+    height: 160px;
     position: absolute;
-    top: -130px;
+    top: -100px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 /* Box Titles */
 .missionh2 {
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 15px;
 }
 
-/* Background Colors */
-.vision {
-    background-color: #ffffff;
-    padding-top: 80px;
-    color: #000000;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .mission_content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .mission_box {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .missionh1 {
+        font-size: 28px;
+    }
+
+    .mission_box img {
+        width: 120px;
+        height: 130px;
+        top: -80px;
+    }
 }
 
-.mission {
-    background-color: #ffffff;
-    padding-top: 80px;
-    color: #000;
+@media screen and (max-width: 480px) {
+    .missionh1 {
+        font-size: 24px;
+    }
+
+    .missionh2 {
+        font-size: 18px;
+    }
+
+    .mission_box {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .mission_box img {
+        width: 100px;
+        height: 110px;
+        top: -70px;
+    }
 }
 
-.values {
-    background-color: #ffffff;
-    padding-top: 80px;
-    color: #000;
-}
-
-/* List Styles */
-.values ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-.values ul li {
-    font-size: 16px;
-    margin: 5px 0;
-}
 
 
 
